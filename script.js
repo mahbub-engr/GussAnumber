@@ -57,7 +57,7 @@ function displayGuess(guess) {
 const li = document.createElement("li");
     li.innerText = guess;
 
-    guessList.appendChild(li);
+    guessList.prepend(li);
 
     numGuss++;
 
