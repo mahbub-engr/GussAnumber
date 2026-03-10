@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guess Number</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4 col-md-6 col-sm-8 col-12">
+
+                <div class="card game-card p-4 shadow-sm text-center">
+
+                    <h3 class="title"> Guess the Number</h3>
+
+                    <p class="subtitle">
+                        Pick a number between <b>1 - 100</b>
+                    </p>
+
+                    <input type="number" class="form-control guess-input" placeholder="Enter your guess"
+                        id="guessInput">
+
+                    <button class="btn btn-primary submit-btn" id="submitGuess">
+                        Submit Guess
+                    </button>
+
+                    <div class="result-box" id="resultBox">
+                        Start guessing...
+                    </div>
+
+                    <div class="previous-guesses mb-3 text-center">
+                        <h6>Previous Guesses:</h6>
+                        <ul class="list-group list-group-flush" id="guessList">
+                            <!-- guesses will appear here -->
+                        </ul>
+                    </div>
+
+                    <div class=" d-flex justify-content-center">
+
+                        <span>Attempts: <b id="attempts">10</b></span>
+
+                    </div>
+
+                    <button class="btn btn-outline-secondary restart-btn w-100" id="restartGame">
+                        Restart Game
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
